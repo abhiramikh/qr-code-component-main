@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap" rel="stylesheet">
+    <title>QR Code</title>
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        margin: 0;
+        background-color: hsl(212, 45%, 89%);
+        font-family: "Outfit", sans-serif;
+      }
+
+      .container {
+        background-color: white;
+        width: 320px;
+        border-radius: 20px;
+        padding: 16px;
+        box-shadow: 0 15px 25px rgba(0, 0, 0, 0.08);
+      }
+
+      .qrcode {
+        text-align: center;
+      }
+
+      .qrcode img {
+        width: 100%;
+        border-radius: 10px;
+      }
+
+      .qrcode h1 {
+        font-size: 18px;
+        color: hsl(218, 44%, 22%);
+        margin: 20px 0 15px;
+        font-weight: 700;
+      }
+
+      .qrcode p {
+        font-size: 15px;
+        color: hsl(220, 15%, 55%);
+        margin: 0 10px 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="qrcode">
+        <img src="../images/image-qr-code.png" alt="" />
+        <h1>Improve your front-end skills by building projects</h1>
+        <p>
+          Scan the QR code to visit Frontend Mentor and take your coding skills
+          to the next level
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
