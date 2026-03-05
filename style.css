@@ -1,10 +1,15 @@
+:root {
+  --background-color: hsl(212, 45%, 89%);
+  --title-color: hsl(218, 44%, 22%);
+  --text-color: hsl(220, 15%, 55%);
+}
 body {
   display: flex;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
   margin: 0;
-  background-color: hsl(212, 45%, 89%);
+  background-color: var(--background-color);
   font-family: "Outfit", sans-serif;
 }
 
@@ -16,24 +21,24 @@ body {
   box-shadow: 0 15px 25px rgba(0, 0, 0, 0.08);
 }
 
-.qrcode {
+.container {
   text-align: center;
 }
 
-.qrcode img {
+.container img {
   width: 100%;
   border-radius: 10px;
 }
 
-.qrcode h1 {
-  font-size: 18px;
-  color: hsl(218, 44%, 22%);
+.container h1 {
+  font-size: clamp(1.2rem, 2vw, 1.5rem);
+  color: var(--title-color);
   margin: 20px 0 15px;
   font-weight: 700;
 }
 
-.qrcode p {
-  font-size: 15px;
-  color: hsl(220, 15%, 55%);
+.container p {
+  font-size: clamp(0.9rem, 1.5vw, 1.1rem);
+  color: var(--text-color);
   margin: 0 10px 10px;
 }
